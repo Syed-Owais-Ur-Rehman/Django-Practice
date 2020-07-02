@@ -48,7 +48,7 @@ def contact(request):
     return render(request, 'shop/contact.html')
 
 def tracker(request):
-    return HttpResponse("we are tracker")
+    return render(request, 'shop/tracker.html')
 
 def search(request):
     return HttpResponse("we are search")
@@ -60,4 +60,4 @@ def productView(request, myid):
     return render(request, 'shop/prodview.html', {'product':product[0]})
 
 def checkout(request):
-    return HttpResponse("we are checkout")
+    return render(request, 'shop/checkout.html')
