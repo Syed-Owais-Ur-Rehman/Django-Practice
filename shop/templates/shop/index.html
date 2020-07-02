@@ -127,6 +127,8 @@ cart[idstr] = 1;
 console.log(cart);
 localStorage.setItem('cart', JSON.stringify(cart));
 });
+$('#tooltip').tooltip('show');
+// document.getElementById("tooltip").setAttribute('data-content', '<h5>Cart</h5>');
 </script>
 {% endblock %}
 
